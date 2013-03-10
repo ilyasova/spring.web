@@ -15,7 +15,7 @@
 	http://www.springframework.org/schema/aop 
 	http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
 	
-	<context:property-placeholder location="classpath:configuration.properties"></context:property-placeholder>	
+	<context:property-placeholder location="classpath:configuration.properties" />	
 	
 	<bean id="dataSource" class="${jdbc.class}"
 		destroy-method="close" p:driverClassName="${jdbc.driver.className}"
